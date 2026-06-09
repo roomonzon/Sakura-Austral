@@ -1,0 +1,21 @@
+/* Estilos de pie de página */
+
+@mixin centro{
+    text-align: center;
+}
+
+.pie {
+    margin-top: 35px;
+    justify-content: center;
+    background-color: $color-verde;
+    padding: 20px;
+  
+    h4 {
+        @include centro;
+    }
+  }
+  
+  h5, p {
+    @include centro;
+  }
+  

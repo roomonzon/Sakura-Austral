@@ -1,0 +1,28 @@
+/* Estilos de navegación */
+
+nav {
+    img {
+      display: flex;
+    }
+  
+    background-color: $color-verde;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+  
+    li {
+      display: flex;
+      text-align: center;
+  
+      a {
+        color: $color-negro;
+        background-color: $color-verde;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px;
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  

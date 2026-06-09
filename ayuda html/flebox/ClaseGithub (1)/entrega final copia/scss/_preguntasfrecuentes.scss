@@ -1,0 +1,13 @@
+/* Estilos de sección de preguntas frecuentes */
+
+@mixin frecuentes{
+        text-align: center;
+        text-decoration: none;
+      }
+
+
+.pfrecuentes, h2, ul {
+    padding: 20px;
+    margin: 15px;
+    @include frecuentes;
+  }

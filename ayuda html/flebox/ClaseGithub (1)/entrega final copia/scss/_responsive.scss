@@ -1,0 +1,9 @@
+/*MediaQuerries*/
+@media (max-width: 600) {
+    /* Productos */
+    .card-container {
+      height: auto;
+      width: auto;
+      flex-direction: column;
+    }
+  }

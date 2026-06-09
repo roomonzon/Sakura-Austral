@@ -1,0 +1,17 @@
+/* Estilos de la sección hero */
+
+.hero {
+    background-image: url(../imagenes/descarga\ \(2\).jpg);
+    height: 250px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  
+    img {
+      width: 90px;
+    }
+  
+    h1, h2 {
+      color: $color-blanco;
+    }
+  }

@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#7079f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+.contenedor{
+    width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "logo nav nav nav"
+        "productos productos servicios servicios"
+        "fotos fotos fotos fotos"
+        "footer footer footer footer";
+    grid-gap: 10px;
+}
+.logo{
+    grid-area: logo;
+    color:white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #432688;
+    text-align: center;
+    height: 50px;
+    border-radius: 3px;
+}
+.nav{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    color:white;
+	grid-area:nav;
+    height: 50px;
+    background-color: #432688;
+    text-align: center;
+    border-radius: 3px;
+}
+.productos{
+    grid-area:productos;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.servicios{
+    grid-area:servicios;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.fotos{
+    grid-area:fotos;
+    display:flex;
+    justify-content:space-around;
+}
+.footer{
+    grid-area:footer;
+    background-color: #432688;
+    text-align: center;
+    color:white;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.foto{
+    background-color: black;
+    color:white;   
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 3px;
+}
