@@ -1,0 +1,74 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: palegreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    background-color: black;
+    padding: 10px;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    height: 80px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    padding: 20px;
+    margin: 10;
+    color: lime;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li a:hover{
+    color: black;
+    background-color: lime;
+    border-radius: 50%;
+}
+.menu li a{
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.menu li a:focus{
+    outline: 2px dashed lime;
+    outline-offset: 4px;
+}
+@media only screen and (max-width: 600px){
+    .menu{
+        padding: 5px;
+        height: auto;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu li a{
+        display: block;
+        padding: 15px;
+        margin: 5px 0;
+    }
+}
+nav{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.menu li a{
+    margin: 0 10px;
+}
+.menu li a:active{
+    transform: scale(0.98);
+}
+.menu li a.active,
+.menu li a[aria-current="page"] {
+    background-color: lime;
+    color: black;
+    border-radius: 50%;
+}
+
+.menu li a:focus-visible {
+    outline: 3px solid lime;
+    outline-offset: 5px;
+}
